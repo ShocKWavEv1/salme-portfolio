@@ -16,6 +16,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/lib/store/store.js",
+    "src/components/particles/particles.jsx",
+    "src/lib/store/store.js",
+    "src/hooks/useScroll.js"
+  ],
   "exclude": ["node_modules"]
 }
