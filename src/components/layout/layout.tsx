@@ -4,6 +4,7 @@ import { Box } from "@chakra-ui/react";
 import WebGl from "../particles/particles";
 import Navbar from "./navbar/navbar";
 import useThemeMode from "@/hooks/useThemeMode";
+import Footer from "./footer/footer";
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const { BG } = useThemeMode();
@@ -16,6 +17,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Box position="relative" zIndex={3} w="100%">
         {children}
       </Box>
+      <Footer />
     </Box>
   );
 };
