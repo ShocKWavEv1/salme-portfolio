@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import { FooterProps } from "./model";
 import useThemeMode from "@/hooks/useThemeMode";
+import FooterLinks from "./footerLinks/footerLinks";
 
 const Footer: React.FC<FooterProps> = () => {
   const { SECONDARY_COLOR } = useThemeMode();
@@ -52,73 +53,7 @@ const Footer: React.FC<FooterProps> = () => {
           get in touch
         </Heading>
       </Box>
-      <Box
-        w="100%"
-        p="30px 0px"
-        display="grid"
-        gridTemplateColumns="1fr 1fr 1fr"
-      >
-        <Box w="100%" display="flex" flexDirection="column">
-          <Text
-            variant="MDREGULAR"
-            color={SECONDARY_COLOR}
-            textTransform="uppercase"
-          >
-            Social Media
-          </Text>
-          <Box>
-            <Text
-              variant="MDREGULAR"
-              color={SECONDARY_COLOR}
-              textTransform="uppercase"
-            >
-              Linkedin - Github - Instagram
-            </Text>
-          </Box>
-        </Box>
-        <Box w="100%" display="flex" flexDirection="column">
-          <Text
-            variant="MDREGULAR"
-            color={SECONDARY_COLOR}
-            textTransform="uppercase"
-          >
-            Get in touch
-          </Text>
-          <Box>
-            <Text
-              variant="MDREGULAR"
-              color={SECONDARY_COLOR}
-              textTransform="uppercase"
-            >
-              rodd.sal23@gmail.com
-            </Text>
-          </Box>
-        </Box>
-        <Box
-          w="100%"
-          display="flex"
-          alignItems="flex-end"
-          justifyContent="center"
-          flexDirection="column"
-        >
-          <Text
-            variant="MDREGULAR"
-            color={SECONDARY_COLOR}
-            textTransform="uppercase"
-          >
-            © SLMRN.STUDIO 2024
-          </Text>
-          <Box>
-            <Text
-              variant="MDREGULAR"
-              color={SECONDARY_COLOR}
-              textTransform="uppercase"
-            >
-              ALL RIGHTS RESERVED
-            </Text>
-          </Box>
-        </Box>
-      </Box>
+      <FooterLinks />
     </Box>
   );
 };

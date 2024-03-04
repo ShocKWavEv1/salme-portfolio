@@ -11,6 +11,7 @@ import { customCursor } from "@/lib/constants/constants";
 import LoadingBar from "react-top-loading-bar";
 import { useRouter } from "next/router";
 import Preloader from "@/components/preloader/preloader";
+import Meta from "@/components/meta/meta";
 
 export default function App({ Component, pageProps }: AppProps) {
   const isTouchableDevice = useIsTouchDevice();
@@ -61,6 +62,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={theme}>
+      <Meta
+        title={"SLMRN"}
+        description="construimos experiencias y productos digitales"
+      />
       {!isTouchableDevice ? <Cursor /> : null}
       <LoadingBar ref={LoadingBarRef} height={5} color="#ff98a2" />
       <Preloader />

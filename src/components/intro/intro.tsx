@@ -77,7 +77,7 @@ const Intro: React.FC<IntroProps> = () => {
                 repeatDelay: 1,
               },
             }}
-            style={{ width: "2px", backgroundColor: "#FF98A2" }}
+            style={{ width: "3px", backgroundColor: "#FF98A2" }}
           />
           <Box
             w="100%"
