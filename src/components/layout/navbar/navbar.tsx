@@ -72,10 +72,10 @@ const Navbar: React.FC<NavbarProps> = () => {
           bg="rgba(0,0,0,0)"
           backdropFilter="saturate(150%) blur(20px)"
           display="grid"
-          gridTemplateColumns="1fr  1fr"
+          gridTemplateColumns="1fr 1fr"
         >
-          <Box>
-            <Text variant="XLSEMIBOLD" color={SECONDARY_COLOR}>
+          <Box w="100%" display="flex" alignItems="center">
+            <Text variant="XLBOLD" color={SECONDARY_COLOR}>
               salmeron.
             </Text>
           </Box>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import { FooterProps } from "./model";
 import useThemeMode from "@/hooks/useThemeMode";
 import FooterLinks from "./footerLinks/footerLinks";
@@ -49,6 +49,9 @@ const Footer: React.FC<FooterProps> = () => {
           variant="H2BLACK"
           color="primary.500"
           textTransform="uppercase"
+          as="button"
+          cursor="pointer"
+          className="hoverLink"
         >
           get in touch
         </Heading>

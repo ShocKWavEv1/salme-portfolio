@@ -47,8 +47,8 @@ export const curtain = () => {
     .to(".preloader, .time_container", {
       duration: 0.75,
       stagger: 0.2,
-      y: "-100%",
-      opacity: 1,
+      //y: "-100%",
+      opacity: 0,
       ease: "Power3.easeOut",
     })
     .to("body", {

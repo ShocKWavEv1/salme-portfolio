@@ -4,12 +4,12 @@ import { Box, Text } from "@chakra-ui/react";
 import useThemeMode from "@/hooks/useThemeMode";
 
 const FooterLinks: React.FC<FooterLinksProps> = () => {
-  const { SECONDARY_COLOR } = useThemeMode();
+  const { SECONDARY_COLOR, colorMode } = useThemeMode();
   return (
     <Box w="100%" p="30px 0px" display="grid" gridTemplateColumns="1fr 1fr 1fr">
       <Box w="100%" display="flex" flexDirection="column">
         <Text
-          variant="MDREGULAR"
+          variant="MDBOLD"
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -17,17 +17,42 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
         </Text>
         <Box>
           <Text
-            variant="MDREGULAR"
+            variant="MDBOLD"
             color={SECONDARY_COLOR}
             textTransform="uppercase"
           >
-            Linkedin - Github - Instagram
+            <Text
+              as={"button"}
+              cursor="pointer"
+              className={colorMode === "dark" ? "linkLight" : "link"}
+              textTransform="uppercase"
+            >
+              Linkedin
+            </Text>{" "}
+            -{" "}
+            <Text
+              as={"button"}
+              cursor="pointer"
+              className={colorMode === "dark" ? "linkLight" : "link"}
+              textTransform="uppercase"
+            >
+              GITHUB
+            </Text>{" "}
+            -{" "}
+            <Text
+              as={"button"}
+              cursor="pointer"
+              className={colorMode === "dark" ? "linkLight" : "link"}
+              textTransform="uppercase"
+            >
+              DOWNLOAD CV
+            </Text>
           </Text>
         </Box>
       </Box>
       <Box w="100%" display="flex" flexDirection="column">
         <Text
-          variant="MDREGULAR"
+          variant="MDBOLD"
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -35,9 +60,12 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
         </Text>
         <Box>
           <Text
-            variant="MDREGULAR"
+            variant="MDBOLD"
             color={SECONDARY_COLOR}
             textTransform="uppercase"
+            as="a"
+            cursor="pointer"
+            className={colorMode === "dark" ? "linkLight" : "link"}
           >
             rodd.sal23@gmail.com
           </Text>
@@ -51,7 +79,7 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
         flexDirection="column"
       >
         <Text
-          variant="MDREGULAR"
+          variant="MDBOLD"
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -59,7 +87,7 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
         </Text>
         <Box>
           <Text
-            variant="MDREGULAR"
+            variant="MDBOLD"
             color={SECONDARY_COLOR}
             textTransform="uppercase"
           >

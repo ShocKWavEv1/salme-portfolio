@@ -185,3 +185,127 @@ a {
   bottom: 0;
   z-index: 3;
 }
+
+.hoverLink {
+  color: #ff98a2;
+  position: relative;
+  text-decoration: none;
+}
+
+.hoverLink::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #ff98a2;
+  bottom: 5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hoverLink:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.hoverLightLink {
+  color: #ffddd5;
+  position: relative;
+  text-decoration: none;
+}
+
+.hoverLightLink::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #ffddd5;
+  bottom: 5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hoverLightLink:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.link {
+  color: #ffddd5;
+  position: relative;
+  text-decoration: none;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffddd5;
+  bottom: 0px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.linkLight {
+  color: #231a1c;
+  position: relative;
+  text-decoration: none;
+}
+
+.linkLight::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #231a1c;
+  bottom: 0px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.linkLight:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.marquee1 {
+  position: absolute;
+  transform: rotate(-7.37deg) translateX(-2%);
+  width: 105%;
+}
+
+.marquee2 {
+  position: absolute;
+  transform: rotate(2.52deg);
+}
+
+.marqueeItem {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  margin: 0;
+  user-select: none;
+  margin: 0px 10px;
+}
+
+.svg-marquee {
+  width: 90px;
+  height: 48px;
+  margin-left: 10px;
+}

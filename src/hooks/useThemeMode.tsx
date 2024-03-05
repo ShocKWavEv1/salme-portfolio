@@ -1,7 +1,7 @@
 import { useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 const useThemeMode = () => {
-  const BG = useColorModeValue("black", "primary.100");
+  const BG = useColorModeValue("black", "primary.200");
 
   const MAIN_COLOR = useColorModeValue("primary.500", "licorice.900");
 
