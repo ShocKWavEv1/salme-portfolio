@@ -309,3 +309,16 @@ a {
   height: 48px;
   margin-left: 10px;
 }
+
+.reveal {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.reveal:nth-of-type(2) {
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}

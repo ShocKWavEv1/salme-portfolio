@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = () => {
       w="100%"
       display="flex"
       flexDirection="column"
-      p="280px 50px 0px 50px"
+      p="0px 50px 0px 50px"
       position="relative"
       zIndex={3}
     >

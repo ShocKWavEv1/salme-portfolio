@@ -71,6 +71,7 @@ const Intro: React.FC<IntroProps> = () => {
             >
               {Array.from({ length: 5 }, (_, i) => (
                 <Scrollytelling.Animation
+                  key={i}
                   tween={{
                     start: 0,
                     end: 100,

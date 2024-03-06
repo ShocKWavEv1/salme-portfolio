@@ -55,9 +55,9 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
           </Scrollytelling.Parallax>
           <Box w="70%" p="10px">
             <Text variant="XLREGULAR" color={SECONDARY_COLOR}>
-              SLMRN is carving out a vanguard position by combining intensive
-              technology with formal design expertise – we are making the
-              internet everything it can be.
+              SLMRN is always looking for a vanguard and innovation position by
+              combining top notch technology with – visual design & development
+              of the highest quality.
             </Text>
           </Box>
           <Box w="100%" p="60px 10px 0px 10px">
@@ -107,6 +107,7 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
                         {item.bullets.map((item: any, j: number) => {
                           return (
                             <Heading
+                              key={item}
                               variant="H9BOLD"
                               color={SECONDARY_COLOR}
                               textTransform="uppercase"

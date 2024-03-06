@@ -5,10 +5,14 @@ import Titles from "./titles/titles";
 import { projectsData } from "./constants";
 
 const Projects: React.FC<ProjectsProps> = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<any>(null);
   return (
-    <Box w="100%" zIndex={1} position="absolute">
-      <Titles data={projectsData} setSelectedProject={setSelectedProject} />
+    <Box w="100%" zIndex={1}>
+      <Titles
+        data={projectsData}
+        selectedProject={selectedProject}
+        setSelectedProject={setSelectedProject}
+      />
     </Box>
   );
 };

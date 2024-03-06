@@ -18,7 +18,7 @@ const Showcase: React.FC<ShowcaseProps> = () => {
       <Box w="100%" display="flex" flexDirection="column" position="relative">
         <Box
           w="100%"
-          p="60px 50px 280px 50px"
+          p="40px 50px 120px 50px"
           display="flex"
           flexDirection="column"
         >
@@ -70,7 +70,7 @@ const Showcase: React.FC<ShowcaseProps> = () => {
               new
             </Heading>
           </Scrollytelling.Parallax>
-          <Box w="100%" bg="red" mt="60px" position="relative">
+          <Box w="100%" mt="60px" position="relative">
             <Projects />
           </Box>
         </Box>
