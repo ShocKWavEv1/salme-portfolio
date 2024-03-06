@@ -9,12 +9,7 @@ import { techStack } from "./constants";
 const Laboratory: React.FC<LaboratoryProps> = () => {
   const { SECONDARY_COLOR } = useThemeMode();
   return (
-    <Scrollytelling.Root
-      start="top bottom"
-      end="bottom top"
-      scrub={1.1}
-      debug={{ label: "Lab Intro" }}
-    >
+    <Scrollytelling.Root start="top bottom" end="bottom top" scrub={1.1}>
       <Box w="100%" display="flex" flexDirection="column" position="relative">
         <Box
           w="100%"

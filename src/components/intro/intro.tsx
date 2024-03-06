@@ -11,12 +11,7 @@ const Intro: React.FC<IntroProps> = () => {
   const SLMRN = ["S", "L", "M", "R", "N"];
 
   return (
-    <Scrollytelling.Root
-      start="top bottom"
-      end="bottom top"
-      scrub={1.1}
-      debug={{ label: "Intro" }}
-    >
+    <Scrollytelling.Root start="top bottom" end="bottom top" scrub={1.1}>
       <Box
         w="100%"
         h="100vh"
