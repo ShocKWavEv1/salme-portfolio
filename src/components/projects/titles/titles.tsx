@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import useThemeMode from "@/hooks/useThemeMode";
 
-export default function index({
+const ProjectsLines: React.FC<TitlesProps> = ({
   data,
   setSelectedProject,
   selectedProject,
@@ -17,7 +17,7 @@ export default function index({
   data: any;
   setSelectedProject: any;
   selectedProject: any;
-}) {
+}) => {
   const { SECONDARY_COLOR } = useThemeMode();
   return (
     <Box w="100%" borderTop="1px solid" borderTopColor={SECONDARY_COLOR}>
@@ -33,7 +33,9 @@ export default function index({
       })}
     </Box>
   );
-}
+};
+
+export default ProjectsLines;
 
 function Title({
   data,
