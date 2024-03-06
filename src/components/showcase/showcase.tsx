@@ -3,6 +3,7 @@ import { Box, Heading } from "@chakra-ui/react";
 import { ShowcaseProps } from "./model";
 import useThemeMode from "@/hooks/useThemeMode";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
+import Projects from "../projects/projects";
 
 const Showcase: React.FC<ShowcaseProps> = () => {
   const { SECONDARY_COLOR } = useThemeMode();
@@ -17,7 +18,7 @@ const Showcase: React.FC<ShowcaseProps> = () => {
       <Box w="100%" display="flex" flexDirection="column" position="relative">
         <Box
           w="100%"
-          p="100px 50px 280px 50px"
+          p="60px 50px 280px 50px"
           display="flex"
           flexDirection="column"
         >
@@ -44,11 +45,12 @@ const Showcase: React.FC<ShowcaseProps> = () => {
             }}
           >
             <Heading
+              mt="-30px"
               variant="H3BLACK"
               color={SECONDARY_COLOR}
               textTransform="uppercase"
             >
-              something
+              is something
             </Heading>
           </Scrollytelling.Parallax>
           <Scrollytelling.Parallax
@@ -59,6 +61,7 @@ const Showcase: React.FC<ShowcaseProps> = () => {
             }}
           >
             <Heading
+              mt="-30px"
               as="span"
               variant="H3BLACK"
               textTransform="uppercase"
@@ -67,6 +70,9 @@ const Showcase: React.FC<ShowcaseProps> = () => {
               new
             </Heading>
           </Scrollytelling.Parallax>
+          <Box w="100%" bg="red" mt="60px" position="relative">
+            <Projects />
+          </Box>
         </Box>
       </Box>
     </Scrollytelling.Root>

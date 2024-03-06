@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <WebGl />
       </Box>
       <Navbar />
-      <Box position="relative" zIndex={3} w="100%">
+      <Box position="relative" overflowX="hidden" zIndex={3} w="100%">
         {children}
       </Box>
       <Footer />

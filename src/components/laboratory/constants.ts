@@ -7,6 +7,7 @@ export const techStack = [
       "Typescript",
       "Jest",
       "Three js",
+      "Vercel",
     ],
   },
   {
@@ -21,6 +22,14 @@ export const techStack = [
   },
   {
     title: "03",
-    bullets: ["Zustand", "Redux", "graphQL", "Axios", "React Query"],
+    bullets: [
+      "Zustand",
+      "Redux",
+      "graphQL",
+      "Axios",
+      "React Query",
+      "Headless cms",
+      "Shopify",
+    ],
   },
 ];

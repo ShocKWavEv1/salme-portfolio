@@ -14,7 +14,7 @@ const Intro: React.FC<IntroProps> = () => {
     <Scrollytelling.Root
       start="top bottom"
       end="bottom top"
-      defaults={{ ease: "linear" }}
+      scrub={1.1}
       debug={{ label: "Intro" }}
     >
       <Box

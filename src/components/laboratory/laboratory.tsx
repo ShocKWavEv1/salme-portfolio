@@ -128,7 +128,7 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
           pb="250px"
           display="flex"
           alignItems="center"
-          mt="180px"
+          mt="220px"
           position="relative"
         >
           <MarqueeRibbon className="marquee1" isSolid />
