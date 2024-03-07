@@ -53,7 +53,7 @@ body::after {
   content: "";
   height: 300%;
   left: -100%;
-  opacity: 0.055;
+  opacity: 0.035;
   pointer-events: none;
   position: fixed;
   top: -100%;
