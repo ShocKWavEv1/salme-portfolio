@@ -64,7 +64,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         <Box
           w="100%"
           h="auto"
-          p="12px 20px"
+          p={["12px 10px", "12px 20px", "12px 20px", "12px 20px", "12px 20px"]}
           position="absolute"
           zIndex={5}
           borderBottom="1px solid"
@@ -75,7 +75,10 @@ const Navbar: React.FC<NavbarProps> = () => {
           gridTemplateColumns="1fr 1fr"
         >
           <Box w="100%" display="flex" alignItems="center">
-            <Text variant="XLBOLD" color={SECONDARY_COLOR}>
+            <Text
+              variant={["LGBOLD", "XLBOLD", "XLBOLD", "XLBOLD", "XLBOLD"]}
+              color={SECONDARY_COLOR}
+            >
               salmeron.
             </Text>
           </Box>
@@ -92,7 +95,13 @@ const Navbar: React.FC<NavbarProps> = () => {
               <ToggleTheme />
             </Box>
             <Box
-              p="10px 20px"
+              p={[
+                "10px 10px",
+                "10px 20px",
+                "10px 20px",
+                "10px 20px",
+                "10px 20px",
+              ]}
               as="a"
               cursor="pointer"
               onClick={() => setOpen(true)}

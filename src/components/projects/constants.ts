@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    title: "Housecolor studio",
+    title: "Housecolor",
     description:
       "Working on the Next-Generation HMI Experience without no driving experience.",
     speed: 0.5,

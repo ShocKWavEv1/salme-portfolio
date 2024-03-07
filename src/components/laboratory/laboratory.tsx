@@ -13,7 +13,13 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
       <Box w="100%" display="flex" flexDirection="column" position="relative">
         <Box
           w="100%"
-          p="180px 50px 0px 50px"
+          p={[
+            "50px 12px 0px 12px",
+            "180px 25px 0px 25px",
+            "180px 30px 0px 30px",
+            "180px 30px 0px 30px",
+            "180px 50px 0px 50px",
+          ]}
           display="flex"
           flexDirection="column"
         >
@@ -25,7 +31,7 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
             }}
           >
             <Heading
-              variant="H3BLACK"
+              variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
               color={SECONDARY_COLOR}
               textTransform="uppercase"
             >
@@ -40,16 +46,29 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
             }}
           >
             <Heading
-              mt="-30px"
-              variant="H3BLACK"
+              mt={["-15px", "-20px", "-20px", "-25px", "-30px"]}
+              variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
               color={SECONDARY_COLOR}
               textTransform="uppercase"
             >
               the lab
             </Heading>
           </Scrollytelling.Parallax>
-          <Box w="70%" p="10px">
-            <Text variant="XLREGULAR" color={SECONDARY_COLOR}>
+          <Box
+            w={["100%", "100%", "80%", "70%", "70%"]}
+            mt={["20px"]}
+            p={["10px 0px", "10px", "10px", "10px", "10px"]}
+          >
+            <Text
+              variant={[
+                "MDREGULAR",
+                "MDREGULAR",
+                "LGREGULAR",
+                "XLREGULAR",
+                "XLREGULAR",
+              ]}
+              color={SECONDARY_COLOR}
+            >
               SLMRN is always looking for a vanguard and innovation position by
               combining top notch technology with – visual design & development
               of the highest quality.
@@ -59,7 +78,13 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
             <Box
               w="100%"
               display="grid"
-              gridTemplateColumns="1fr 1fr 1fr"
+              gridTemplateColumns={[
+                "1fr",
+                "1fr",
+                "1fr",
+                "1fr 1fr 1fr",
+                "1fr 1fr 1fr",
+              ]}
               gap="50px"
             >
               {techStack.map((item: any, idx: number) => {
@@ -67,7 +92,7 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
                   <Box
                     key={item.title}
                     w="100%"
-                    h="400px"
+                    h={["370px", "400px", "400px", "400px", "400px"]}
                     p="20px"
                     border="1px solid"
                     borderColor={SECONDARY_COLOR}
@@ -84,7 +109,13 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
                     >
                       <Box w="100%" h="100%">
                         <Heading
-                          variant="H5BLACK"
+                          variant={[
+                            "H6BLACK",
+                            "H5BLACK",
+                            "H5BLACK",
+                            "H5BLACK",
+                            "H5BLACK",
+                          ]}
                           color="primary.500"
                           textTransform="uppercase"
                         >
@@ -103,7 +134,13 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
                           return (
                             <Heading
                               key={item}
-                              variant="H9BOLD"
+                              variant={[
+                                "H10BLACK",
+                                "H9BLACK",
+                                "H9BLACK",
+                                "H10BLACK",
+                                "H9BLACK",
+                              ]}
                               color={SECONDARY_COLOR}
                               textTransform="uppercase"
                             >
@@ -121,10 +158,10 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
         </Box>
         <Box
           w="105%"
-          pb="250px"
+          pb={["150px", "150px", "180px", "180px", "220px"]}
           display="flex"
           alignItems="center"
-          mt="220px"
+          mt={["150px", "150px", "180px", "180px", "220px"]}
           position="relative"
         >
           <MarqueeRibbon className="marquee1" isSolid />

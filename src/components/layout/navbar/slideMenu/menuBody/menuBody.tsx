@@ -14,13 +14,16 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
       <Box
         w="100%"
         h="auto"
-        p="12px 20px"
+        p={["12px 10px", "12px 20px", "12px 20px", "12px 20px", "12px 20px"]}
         bg={colorMode === "dark" ? "primary.500" : "rgba(0,0,0,0)"}
         display="grid"
         gridTemplateColumns="1fr  1fr"
       >
         <Box w="100%" display="flex" alignItems="center">
-          <Text variant="XLBOLD" color={SECONDARY_COLOR}>
+          <Text
+            variant={["LGBOLD", "XLBOLD", "XLBOLD", "XLBOLD", "XLBOLD"]}
+            color={SECONDARY_COLOR}
+          >
             salmeron.
           </Text>
         </Box>
@@ -39,7 +42,10 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
           justifyContent="flex-end"
         >
           <Box w="auto" cursor="pointer" onClick={() => setOpen()}>
-            <Text variant="XLBOLD" color={SECONDARY_COLOR}>
+            <Text
+              variant={["LGBOLD", "XLBOLD", "XLBOLD", "XLBOLD", "XLBOLD"]}
+              color={SECONDARY_COLOR}
+            >
               close
             </Text>
           </Box>
@@ -53,7 +59,13 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
         alignItems="center"
         justifyContent="center"
         flexDirection="column"
-        p="25px 20px 0px 20px"
+        p={[
+          "25px 10px 0px 10px",
+          "25px 20px 0px 20px",
+          "25px 20px 0px 20px",
+          "25px 20px 0px 20px",
+          "25px 20px 0px 20px",
+        ]}
         bg={colorMode === "dark" ? "primary.500" : "rgba(0,0,0,0)"}
       >
         {navigation.map((item: any, idx: number) => {
@@ -66,7 +78,13 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
               justifyContent="flex-start"
             >
               <Heading
-                variant="H3BLACK"
+                variant={[
+                  "H8BLACK",
+                  "H6BLACK",
+                  "H5BLACK",
+                  "H4BLACK",
+                  "H3BLACK",
+                ]}
                 color={SECONDARY_COLOR}
                 textTransform="uppercase"
                 cursor="pointer"
@@ -84,7 +102,7 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
           );
         })}
         <Box w="100%" p="10px 10px 0px 10px">
-          <FooterLinks />
+          <FooterLinks display="none" />
         </Box>
       </Box>
     </Box>

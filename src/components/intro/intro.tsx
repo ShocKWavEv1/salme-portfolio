@@ -20,19 +20,30 @@ const Intro: React.FC<IntroProps> = () => {
         justifyContent="space-between"
         flexDirection="column"
       >
-        <Box w="100%" h="100%" p="50px 20px">
+        <Box
+          w="100%"
+          h="100%"
+          p={["70px 0px", "60px 0px", "60px 0px", "60px 0px", "60px 20px"]}
+        >
           <Box
             w="100%"
             display="flex"
             alignItems="center"
             justifyContent="center"
+            mt={["10px", "10px", "10px", "0px", "0px"]}
           >
             {SLMRN.map((item: any, idx: number) => {
               return (
                 <Heading
                   key={item}
                   variant="H1BLACK"
-                  fontSize="calc(20vw - 20px)"
+                  fontSize={[
+                    "calc(20vw - 5px)",
+                    "calc(20vw - 10px)",
+                    "calc(20vw - 15px)",
+                    "calc(20vw - 15px)",
+                    "calc(20vw - 20px)",
+                  ]}
                   color="primary.500"
                 >
                   {item}
@@ -40,20 +51,18 @@ const Intro: React.FC<IntroProps> = () => {
               );
             })}
           </Box>
-          <Box w="100%" p="0px 30px" mt="-20px">
+          <Box
+            w="100%"
+            p={["0px 12px", "0px 25px", "0px 30px", "0px 30px", "0px 30px"]}
+            mt={["0px", "-10px", "-10px", "-20px", "-20px"]}
+          >
             <Box>
-              <Heading variant="H6BOLD" color={SECONDARY_COLOR}>
-                REACT MOBILE & WEB DEVELOPER
-              </Heading>
-            </Box>
-            <Box>
-              <Heading variant="H6BOLD" color={SECONDARY_COLOR}>
-                OBSESSED WITH DELIVERING
-              </Heading>
-            </Box>
-            <Box>
-              <Heading variant="H6BOLD" color={SECONDARY_COLOR}>
-                IMMACULATE PRODUCTS.
+              <Heading
+                variant={["H8BOLD", "H7BOLD", "H7BOLD", "H6BOLD", "H6BOLD"]}
+                color={SECONDARY_COLOR}
+              >
+                REACT MOBILE & WEB DEVELOPER OBSESSED WITH DELIVERING IMMACULATE
+                PRODUCTS.
               </Heading>
             </Box>
             <Box
@@ -76,7 +85,7 @@ const Intro: React.FC<IntroProps> = () => {
                     },
                   }}
                 >
-                  <Box w="40px">
+                  <Box w={["30px", "30px", "35px", "40px", "40px"]}>
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -107,6 +116,19 @@ const Intro: React.FC<IntroProps> = () => {
                 </Scrollytelling.Animation>
               ))}
             </Box>
+            <Box
+              w="100%"
+              display={["flex", "none", "none", "none", "none"]}
+              alignItems="center"
+              mt="30px"
+              justifyContent="flex-start"
+            >
+              <Button size="xs" colorScheme="primary">
+                <Text variant="XSBOLD" textTransform="uppercase" color="black">
+                  Check my github
+                </Text>
+              </Button>
+            </Box>
           </Box>
         </Box>
         <Box
@@ -114,14 +136,20 @@ const Intro: React.FC<IntroProps> = () => {
           h="100%"
           display="grid"
           mt="-20px"
-          gridTemplateColumns="1fr 1fr"
+          gridTemplateColumns={[
+            "1fr",
+            "1fr 1fr",
+            "1fr 1fr",
+            "1fr 1fr",
+            "1fr 1fr",
+          ]}
         >
           <Box
             w="100%"
-            display="flex"
+            display={["none", "flex", "flex", "flex", "flex"]}
             alignItems="center"
             justifyContent="flex-start"
-            p="0px 50px"
+            p={["0px 25px", "0px 25px", "0px 30px", "0px 30px", "0px 50px"]}
           >
             <motion.div
               initial={{ height: 0, opacity: 0 }}
@@ -164,10 +192,17 @@ const Intro: React.FC<IntroProps> = () => {
           </Box>
           <Box
             w="100%"
-            p="0px 50px"
-            display="flex"
+            p={["0px 25px", "0px 25px", "0px 30px", "0px 30px", "0px 50px"]}
+            display={["none", "flex", "flex", "flex", "flex"]}
             alignItems="center"
-            justifyContent="flex-end"
+            mt="40px"
+            justifyContent={[
+              "flex-start",
+              "flex-end",
+              "flex-end",
+              "flex-end",
+              "flex-end",
+            ]}
           >
             <Button size="sm" colorScheme="primary">
               <Text variant="SMBOLD" textTransform="uppercase" color="black">

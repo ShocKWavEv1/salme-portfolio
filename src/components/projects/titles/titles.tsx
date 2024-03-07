@@ -68,7 +68,7 @@ function Title({
       borderBottomColor={SECONDARY_COLOR}
       position="relative"
       zIndex={2}
-      h="100px"
+      h={["55px", "65px", "70px", "85px", "100px"]}
       display="flex"
       alignItems="center"
       justifyContent="flex-start"
@@ -88,7 +88,7 @@ function Title({
         <motion.p className="reveal" style={{ clipPath: clip }}>
           <Heading
             as="span"
-            variant="H5BLACK"
+            variant={["H9BLACK", "H8BLACK", "H7BLACK", "H6BLACK", "H5BLACK"]}
             color={SECONDARY_COLOR}
             textTransform="uppercase"
             p="10px"
@@ -99,7 +99,7 @@ function Title({
         <p className="reveal">
           <Heading
             as="span"
-            variant="H5BLACK"
+            variant={["H9BLACK", "H8BLACK", "H7BLACK", "H6BLACK", "H5BLACK"]}
             color={SECONDARY_COLOR}
             textTransform="uppercase"
             opacity={selectedProject === i ? 1 : 0.4}

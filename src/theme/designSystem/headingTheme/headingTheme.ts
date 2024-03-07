@@ -70,7 +70,7 @@ const baseH7Styles = {
 
 const baseH8Styles = {
   fontFamily: PPMonument.style.fontFamily,
-  fontSize: "32px",
+  fontSize: "36px",
 };
 
 const baseH9Styles = {

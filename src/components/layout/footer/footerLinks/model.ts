@@ -1,1 +1,3 @@
-export interface FooterLinksProps {}
+export interface FooterLinksProps {
+  display?: string;
+}

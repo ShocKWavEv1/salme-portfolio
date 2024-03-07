@@ -3,13 +3,26 @@ import { FooterLinksProps } from "./model";
 import { Box, Text } from "@chakra-ui/react";
 import useThemeMode from "@/hooks/useThemeMode";
 
-const FooterLinks: React.FC<FooterLinksProps> = () => {
+const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
   const { SECONDARY_COLOR, colorMode } = useThemeMode();
+
+  const customDisplay = display;
   return (
-    <Box w="100%" p="30px 0px" display="grid" gridTemplateColumns="1fr 1fr 1fr">
+    <Box
+      w="100%"
+      p="30px 0px"
+      display="grid"
+      gridTemplateColumns={[
+        "1fr",
+        "1fr",
+        "1fr",
+        "400px 1fr 1fr",
+        "500px 1fr 1fr",
+      ]}
+    >
       <Box w="100%" display="flex" flexDirection="column">
         <Text
-          variant="MDBOLD"
+          variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -17,7 +30,7 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
         </Text>
         <Box>
           <Text
-            variant="MDBOLD"
+            variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
             color={SECONDARY_COLOR}
             textTransform="uppercase"
           >
@@ -50,9 +63,21 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
           </Text>
         </Box>
       </Box>
-      <Box w="100%" display="flex" flexDirection="column">
+      <Box
+        w="100%"
+        pt={["20px", "20px", "20px", "0px", "0px"]}
+        display={[
+          `${customDisplay ? "none" : "flex"}`,
+          `${customDisplay ? "none" : "flex"}`,
+          "flex",
+          "flex",
+          "flex",
+          "flex",
+        ]}
+        flexDirection="column"
+      >
         <Text
-          variant="MDBOLD"
+          variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -60,7 +85,7 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
         </Text>
         <Box>
           <Text
-            variant="MDBOLD"
+            variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
             color={SECONDARY_COLOR}
             textTransform="uppercase"
             as="a"
@@ -73,13 +98,20 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
       </Box>
       <Box
         w="100%"
+        pt={["20px", "20px", "20px", "0px", "0px"]}
         display="flex"
-        alignItems="flex-end"
+        alignItems={[
+          "flex-start",
+          "flex-start",
+          "flex-start",
+          "flex-end",
+          "flex-end",
+        ]}
         justifyContent="center"
         flexDirection="column"
       >
         <Text
-          variant="MDBOLD"
+          variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -87,7 +119,7 @@ const FooterLinks: React.FC<FooterLinksProps> = () => {
         </Text>
         <Box>
           <Text
-            variant="MDBOLD"
+            variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
             color={SECONDARY_COLOR}
             textTransform="uppercase"
           >

@@ -15,7 +15,7 @@ const Preloader: React.FC<PreloaderProps> = () => {
   return (
     <Box
       w="100%"
-      h="100vh"
+      h="100svh"
       bg="primary.500"
       display="flex"
       alignItems="center"
@@ -38,14 +38,20 @@ const Preloader: React.FC<PreloaderProps> = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
-          p="10px 20px"
+          p={["10px 0px", "10px 0px", "10px 20px", "10px 20px", "10px 20px"]}
         >
           {SLMRN.map((item: any, idx: number) => {
             return (
               <Heading
                 key={item}
                 variant="H1BLACK"
-                fontSize="calc(20vw - 20px)"
+                fontSize={[
+                  "calc(20vw - 10px)",
+                  "calc(20vw - 10px)",
+                  "calc(20vw - 15px)",
+                  "calc(20vw - 15px)",
+                  "calc(20vw - 20px)",
+                ]}
                 color="primary.200"
               >
                 {item}
@@ -79,7 +85,11 @@ const Preloader: React.FC<PreloaderProps> = () => {
           justifyContent="flex-end"
           p="10px 20px"
         >
-          <Heading variant="H1BLACK" color="primary.200" className="timer">
+          <Heading
+            variant={["H5BLACK", "H3BLACK", "H2BLACK", "H1BLACK", "H1BLACK"]}
+            color="primary.200"
+            className="timer"
+          >
             0%
           </Heading>
         </Box>

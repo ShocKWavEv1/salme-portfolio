@@ -11,7 +11,13 @@ const Footer: React.FC<FooterProps> = () => {
       w="100%"
       display="flex"
       flexDirection="column"
-      p="0px 50px 0px 50px"
+      p={[
+        "0px 12px 0px 12px",
+        "0px 25px 0px 25px",
+        "0px 30px 0px 30px",
+        "0px 30px 0px 30px",
+        "0px 50px 0px 50px",
+      ]}
       position="relative"
       zIndex={3}
     >
@@ -22,31 +28,31 @@ const Footer: React.FC<FooterProps> = () => {
         borderBottomColor={SECONDARY_COLOR}
       >
         <Heading
-          variant="H2BLACK"
+          variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
           Any
         </Heading>
         <Heading
-          mt="-35px"
-          variant="H2BLACK"
+          mt={["-15px", "-20px", "-20px", "-30px", "-35px"]}
+          variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
           Project
         </Heading>
         <Heading
-          mt="-35px"
-          variant="H2BLACK"
+          mt={["-15px", "-20px", "-20px", "-30px", "-35px"]}
+          variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
           in mind?
         </Heading>
         <Heading
-          mt="-35px"
-          variant="H2BLACK"
+          mt={["-15px", "-20px", "-20px", "-30px", "-35px"]}
+          variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
           color="primary.500"
           textTransform="uppercase"
           as="button"
