@@ -36,7 +36,7 @@ const MarqueeRibbon: React.FC<MarqueeRibbonProps> = ({
         whiteSpace="nowrap"
       >
         <Heading
-          variant="H6BLACK"
+          variant={["H7BLACK", "H7BLACK", "H6BLACK", "H6BLACK", "H6BLACK"]}
           color={handleMarqueeTheme(colorMode, isSolid)}
           textTransform="uppercase"
         >
