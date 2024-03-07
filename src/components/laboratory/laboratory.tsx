@@ -14,8 +14,8 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
         <Box
           w="100%"
           p={[
-            "50px 12px 0px 12px",
-            "80px 25px 0px 25px",
+            "180px 12px 0px 12px",
+            "180px 25px 0px 25px",
             "180px 30px 0px 30px",
             "180px 30px 0px 30px",
             "180px 50px 0px 50px",
@@ -46,7 +46,7 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
             }}
           >
             <Heading
-              mt={["-15px", "-20px", "-20px", "-25px", "-30px"]}
+              mt={["-12px", "-20px", "-20px", "-25px", "-30px"]}
               variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
               color={SECONDARY_COLOR}
               textTransform="uppercase"

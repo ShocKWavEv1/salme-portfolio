@@ -46,7 +46,7 @@ const Showcase: React.FC<ShowcaseProps> = () => {
             }}
           >
             <Heading
-              mt={["-15px", "-20px", "-20px", "-25px", "-30px"]}
+              mt={["-12px", "-20px", "-20px", "-25px", "-30px"]}
               variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
               color={SECONDARY_COLOR}
               textTransform="uppercase"
@@ -62,7 +62,7 @@ const Showcase: React.FC<ShowcaseProps> = () => {
             }}
           >
             <Heading
-              mt={["-15px", "-20px", "-20px", "-25px", "-30px"]}
+              mt={["-12px", "-20px", "-20px", "-25px", "-30px"]}
               as="span"
               variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
               textTransform="uppercase"

@@ -25,7 +25,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
     >
       <Box w="100%" display="flex" flexDirection="column">
         <Text
-          variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
+          variant={["XSBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -33,7 +33,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
         </Text>
         <Box>
           <Text
-            variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
+            variant={["XSBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
             color={SECONDARY_COLOR}
             textTransform="uppercase"
           >
@@ -86,7 +86,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
         flexDirection="column"
       >
         <Text
-          variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
+          variant={["XSBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -95,7 +95,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
         <Box>
           <Link href="mailto:rodd.sal23@gmail.com">
             <Text
-              variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
+              variant={["XSBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
               color={SECONDARY_COLOR}
               textTransform="uppercase"
               as="button"
@@ -122,7 +122,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
         flexDirection="column"
       >
         <Text
-          variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
+          variant={["XSBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
         >
@@ -130,7 +130,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
         </Text>
         <Box>
           <Text
-            variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
+            variant={["XSBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
             color={SECONDARY_COLOR}
             textTransform="uppercase"
           >
