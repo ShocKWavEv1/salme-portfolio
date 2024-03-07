@@ -2,15 +2,18 @@ import React from "react";
 import { FooterLinksProps } from "./model";
 import { Box, Text } from "@chakra-ui/react";
 import useThemeMode from "@/hooks/useThemeMode";
+import Link from "next/link";
 
 const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
   const { SECONDARY_COLOR, colorMode } = useThemeMode();
+
+  const github = "https://github.com/ShocKWavEv1";
 
   const customDisplay = display;
   return (
     <Box
       w="100%"
-      p="30px 0px"
+      p={["20px 0px", "30px 0px", "30px 0px", "30px 0px", "30px 0px"]}
       display="grid"
       gridTemplateColumns={[
         "1fr",
@@ -34,32 +37,38 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
             color={SECONDARY_COLOR}
             textTransform="uppercase"
           >
-            <Text
-              as={"button"}
-              cursor="pointer"
-              className={colorMode === "dark" ? "linkLight" : "link"}
-              textTransform="uppercase"
-            >
-              Linkedin
-            </Text>{" "}
+            <Link href={github} target="_blank">
+              <Text
+                as={"button"}
+                cursor="pointer"
+                className={colorMode === "dark" ? "linkLight" : "link"}
+                textTransform="uppercase"
+              >
+                Linkedin
+              </Text>{" "}
+            </Link>
             -{" "}
-            <Text
-              as={"button"}
-              cursor="pointer"
-              className={colorMode === "dark" ? "linkLight" : "link"}
-              textTransform="uppercase"
-            >
-              GITHUB
-            </Text>{" "}
+            <Link href={github} target="_blank">
+              <Text
+                as={"button"}
+                cursor="pointer"
+                className={colorMode === "dark" ? "linkLight" : "link"}
+                textTransform="uppercase"
+              >
+                GITHUB
+              </Text>{" "}
+            </Link>
             -{" "}
-            <Text
-              as={"button"}
-              cursor="pointer"
-              className={colorMode === "dark" ? "linkLight" : "link"}
-              textTransform="uppercase"
-            >
-              DOWNLOAD CV
-            </Text>
+            <Link href={github} target="_blank">
+              <Text
+                as={"button"}
+                cursor="pointer"
+                className={colorMode === "dark" ? "linkLight" : "link"}
+                textTransform="uppercase"
+              >
+                DOWNLOAD CV
+              </Text>
+            </Link>
           </Text>
         </Box>
       </Box>
@@ -84,16 +93,18 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
           Get in touch
         </Text>
         <Box>
-          <Text
-            variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
-            color={SECONDARY_COLOR}
-            textTransform="uppercase"
-            as="a"
-            cursor="pointer"
-            className={colorMode === "dark" ? "linkLight" : "link"}
-          >
-            rodd.sal23@gmail.com
-          </Text>
+          <Link href="mailto:rodd.sal23@gmail.com">
+            <Text
+              variant={["SMBOLD", "SMBOLD", "SMBOLD", "MDBOLD", "MDBOLD"]}
+              color={SECONDARY_COLOR}
+              textTransform="uppercase"
+              as="button"
+              cursor="pointer"
+              className={colorMode === "dark" ? "linkLight" : "link"}
+            >
+              rodd.sal23@gmail.com
+            </Text>
+          </Link>
         </Box>
       </Box>
       <Box

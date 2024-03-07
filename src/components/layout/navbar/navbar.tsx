@@ -64,7 +64,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         <Box
           w="100%"
           h="auto"
-          p={["12px 10px", "12px 20px", "12px 20px", "12px 20px", "12px 20px"]}
+          p={["5px 10px", "12px 20px", "12px 20px", "12px 20px", "12px 20px"]}
           position="absolute"
           zIndex={5}
           borderBottom="1px solid"

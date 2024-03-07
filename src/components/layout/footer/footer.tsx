@@ -3,6 +3,7 @@ import { Box, Heading } from "@chakra-ui/react";
 import { FooterProps } from "./model";
 import useThemeMode from "@/hooks/useThemeMode";
 import FooterLinks from "./footerLinks/footerLinks";
+import Link from "next/link";
 
 const Footer: React.FC<FooterProps> = () => {
   const { SECONDARY_COLOR } = useThemeMode();
@@ -23,7 +24,7 @@ const Footer: React.FC<FooterProps> = () => {
     >
       <Box
         w="100%"
-        p="30px 0px"
+        p={["20px 0px", "30px 0px", "30px 0px", "30px 0px", "30px 0px"]}
         borderBottom="1px solid"
         borderBottomColor={SECONDARY_COLOR}
       >
@@ -50,17 +51,19 @@ const Footer: React.FC<FooterProps> = () => {
         >
           in mind?
         </Heading>
-        <Heading
-          mt={["-15px", "-20px", "-20px", "-30px", "-35px"]}
-          variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
-          color="primary.500"
-          textTransform="uppercase"
-          as="button"
-          cursor="pointer"
-          className="hoverLink"
-        >
-          get in touch
-        </Heading>
+        <Link href="mailto:rodd.sal23@gmail.com">
+          <Heading
+            mt={["-15px", "-20px", "-20px", "-30px", "-35px"]}
+            variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
+            color="primary.500"
+            textTransform="uppercase"
+            as="button"
+            cursor="pointer"
+            className="hoverLink"
+          >
+            get in touch
+          </Heading>
+        </Link>
       </Box>
       <FooterLinks />
     </Box>

@@ -8,6 +8,7 @@ import {
   useTransform,
 } from "framer-motion";
 import useThemeMode from "@/hooks/useThemeMode";
+import Link from "next/link";
 
 const ProjectsLines: React.FC<TitlesProps> = ({
   data,
@@ -46,7 +47,7 @@ function Title({
   setSelectedProject: any;
   selectedProject: any;
 }) {
-  const { title, speed, i } = data;
+  const { title, speed, i, link } = data;
   const container = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -60,55 +61,58 @@ function Title({
   const { SECONDARY_COLOR } = useThemeMode();
 
   return (
-    <Box
-      as="a"
-      cursor="pointer"
-      ref={container}
-      borderBottom="1px solid"
-      borderBottomColor={SECONDARY_COLOR}
-      position="relative"
-      zIndex={2}
-      h={["55px", "65px", "70px", "85px", "100px"]}
-      display="flex"
-      alignItems="center"
-      justifyContent="flex-start"
-      _hover={{
-        bg: "primary.500",
-        transition: "background-color 0.4s ease-in-out",
-      }}
-      color="primary.200"
-      onMouseOver={() => {
-        setSelectedProject(i);
-      }}
-      onMouseLeave={() => {
-        setSelectedProject(null);
-      }}
-    >
-      <Box display="inline-block">
-        <motion.p className="reveal" style={{ clipPath: clip }}>
-          <Heading
-            as="span"
-            variant={["H9BLACK", "H8BLACK", "H7BLACK", "H6BLACK", "H5BLACK"]}
-            color={SECONDARY_COLOR}
-            textTransform="uppercase"
-            p="10px"
-          >
-            {selectedProject === i ? "" : title}
-          </Heading>
-        </motion.p>
-        <p className="reveal">
-          <Heading
-            as="span"
-            variant={["H9BLACK", "H8BLACK", "H7BLACK", "H6BLACK", "H5BLACK"]}
-            color={SECONDARY_COLOR}
-            textTransform="uppercase"
-            opacity={selectedProject === i ? 1 : 0.4}
-            p="10px"
-          >
-            {title}
-          </Heading>
-        </p>
+    <Link href={link} target="_blank">
+      <Box
+        w="100%"
+        as="button"
+        cursor="pointer"
+        ref={container}
+        borderBottom="1px solid"
+        borderBottomColor={SECONDARY_COLOR}
+        position="relative"
+        zIndex={2}
+        h={["55px", "65px", "70px", "85px", "100px"]}
+        display="flex"
+        alignItems="center"
+        justifyContent="flex-start"
+        _hover={{
+          bg: "primary.500",
+          transition: "background-color 0.4s ease-in-out",
+        }}
+        color="primary.200"
+        onMouseOver={() => {
+          setSelectedProject(i);
+        }}
+        onMouseLeave={() => {
+          setSelectedProject(null);
+        }}
+      >
+        <Box display="inline-block">
+          <motion.p className="reveal" style={{ clipPath: clip }}>
+            <Heading
+              as="span"
+              variant={["H9BLACK", "H8BLACK", "H7BLACK", "H6BLACK", "H5BLACK"]}
+              color={SECONDARY_COLOR}
+              textTransform="uppercase"
+              p="10px"
+            >
+              {selectedProject === i ? "" : title}
+            </Heading>
+          </motion.p>
+          <p className="reveal">
+            <Heading
+              as="span"
+              variant={["H9BLACK", "H8BLACK", "H7BLACK", "H6BLACK", "H5BLACK"]}
+              color={SECONDARY_COLOR}
+              textTransform="uppercase"
+              opacity={selectedProject === i ? 1 : 0.4}
+              p="10px"
+            >
+              {title}
+            </Heading>
+          </p>
+        </Box>
       </Box>
-    </Box>
+    </Link>
   );
 }

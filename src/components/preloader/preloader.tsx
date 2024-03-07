@@ -46,7 +46,7 @@ const Preloader: React.FC<PreloaderProps> = () => {
                 key={item}
                 variant="H1BLACK"
                 fontSize={[
-                  "calc(20vw - 10px)",
+                  "calc(20vw - 5px)",
                   "calc(20vw - 10px)",
                   "calc(20vw - 15px)",
                   "calc(20vw - 15px)",
@@ -83,7 +83,7 @@ const Preloader: React.FC<PreloaderProps> = () => {
           display="flex"
           alignItems="center"
           justifyContent="flex-end"
-          p="10px 20px"
+          p={["10px 12px", "10px 20px", "10px 20px", "10px 20px", "10px 20px"]}
         >
           <Heading
             variant={["H5BLACK", "H3BLACK", "H2BLACK", "H1BLACK", "H1BLACK"]}

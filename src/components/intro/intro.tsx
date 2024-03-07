@@ -4,17 +4,20 @@ import { Box, Button, Heading, Text } from "@chakra-ui/react";
 import useThemeMode from "@/hooks/useThemeMode";
 import { motion } from "framer-motion";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
+import Link from "next/link";
 
 const Intro: React.FC<IntroProps> = () => {
   const { SECONDARY_COLOR, colorMode } = useThemeMode();
 
   const SLMRN = ["S", "L", "M", "R", "N"];
 
+  const github = "https://github.com/ShocKWavEv1";
+
   return (
     <Scrollytelling.Root start="top bottom" end="bottom top" scrub={1.1}>
       <Box
         w="100%"
-        h="100vh"
+        h="100svh"
         display="flex"
         alignItems="center"
         justifyContent="space-between"
@@ -23,7 +26,7 @@ const Intro: React.FC<IntroProps> = () => {
         <Box
           w="100%"
           h="100%"
-          p={["70px 0px", "60px 0px", "60px 0px", "60px 0px", "60px 20px"]}
+          p={["60px 0px", "60px 0px", "60px 0px", "60px 0px", "60px 20px"]}
         >
           <Box
             w="100%"
@@ -195,7 +198,6 @@ const Intro: React.FC<IntroProps> = () => {
             p={["0px 25px", "0px 25px", "0px 30px", "0px 30px", "0px 50px"]}
             display={["none", "flex", "flex", "flex", "flex"]}
             alignItems="center"
-            mt="40px"
             justifyContent={[
               "flex-start",
               "flex-end",
@@ -204,11 +206,13 @@ const Intro: React.FC<IntroProps> = () => {
               "flex-end",
             ]}
           >
-            <Button size="sm" colorScheme="primary">
-              <Text variant="SMBOLD" textTransform="uppercase" color="black">
-                Check my github
-              </Text>
-            </Button>
+            <Link href={github} target="_blank">
+              <Button size="sm" colorScheme="primary">
+                <Text variant="SMBOLD" textTransform="uppercase" color="black">
+                  Check my github
+                </Text>
+              </Button>
+            </Link>
           </Box>
         </Box>
       </Box>

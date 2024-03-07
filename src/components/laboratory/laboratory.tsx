@@ -15,7 +15,7 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
           w="100%"
           p={[
             "50px 12px 0px 12px",
-            "180px 25px 0px 25px",
+            "80px 25px 0px 25px",
             "180px 30px 0px 30px",
             "180px 30px 0px 30px",
             "180px 50px 0px 50px",
