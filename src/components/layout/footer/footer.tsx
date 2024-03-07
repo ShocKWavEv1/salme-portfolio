@@ -36,7 +36,6 @@ const Footer: React.FC<FooterProps> = () => {
           Any
         </Heading>
         <Heading
-          mt={["-12px", "-20px", "-20px", "-30px", "-35px"]}
           variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
@@ -44,7 +43,6 @@ const Footer: React.FC<FooterProps> = () => {
           Project
         </Heading>
         <Heading
-          mt={["-12px", "-20px", "-20px", "-30px", "-35px"]}
           variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
           color={SECONDARY_COLOR}
           textTransform="uppercase"
@@ -53,7 +51,6 @@ const Footer: React.FC<FooterProps> = () => {
         </Heading>
         <Link href="mailto:rodd.sal23@gmail.com">
           <Heading
-            mt={["-12px", "-20px", "-20px", "-30px", "-35px"]}
             variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
             color="primary.500"
             textTransform="uppercase"

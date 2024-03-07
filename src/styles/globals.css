@@ -204,7 +204,7 @@ a {
   width: 100%;
   height: 8px;
   background-color: #ff98a2;
-  bottom: 5px;
+  bottom: -10px;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
@@ -228,7 +228,7 @@ a {
   width: 100%;
   height: 8px;
   background-color: #ffddd5;
-  bottom: 5px;
+  bottom: -10px;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);

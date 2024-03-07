@@ -63,8 +63,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Meta
-        title={"SLMRN"}
-        description="construimos experiencias y productos digitales"
+        title={"SLMRN | REACT MOBILE & WEB DEVELOPER"}
+        description="REACT MOBILE & WEB DEVELOPER OBSESSED WITH DELIVERING IMMACULATE PRODUCTS."
       />
       {!isTouchableDevice ? <Cursor /> : null}
       <LoadingBar ref={LoadingBarRef} height={5} color="#ff98a2" />

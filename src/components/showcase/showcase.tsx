@@ -14,7 +14,7 @@ const Showcase: React.FC<ShowcaseProps> = () => {
         <Box
           w="100%"
           p={[
-            "40px 12px 120px 12px",
+            "20px 12px 120px 12px",
             "40px 25px 120px 25px",
             "40px 30px 120px 30px",
             "40px 30px 120px 30px",
@@ -46,12 +46,11 @@ const Showcase: React.FC<ShowcaseProps> = () => {
             }}
           >
             <Heading
-              mt={["-12px", "-20px", "-20px", "-25px", "-30px"]}
               variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
               color={SECONDARY_COLOR}
               textTransform="uppercase"
             >
-              is something
+              - something
             </Heading>
           </Scrollytelling.Parallax>
           <Scrollytelling.Parallax
@@ -62,7 +61,6 @@ const Showcase: React.FC<ShowcaseProps> = () => {
             }}
           >
             <Heading
-              mt={["-12px", "-20px", "-20px", "-25px", "-30px"]}
               as="span"
               variant={["H8BLACK", "H6BLACK", "H5BLACK", "H4BLACK", "H3BLACK"]}
               textTransform="uppercase"
@@ -71,7 +69,11 @@ const Showcase: React.FC<ShowcaseProps> = () => {
               new
             </Heading>
           </Scrollytelling.Parallax>
-          <Box w="100%" mt="60px" position="relative">
+          <Box
+            w="100%"
+            mt={["40px", "120px", "120px", "120px", "120px"]}
+            position="relative"
+          >
             <Projects />
           </Box>
         </Box>

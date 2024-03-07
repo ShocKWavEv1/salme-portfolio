@@ -76,6 +76,7 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
               display="flex"
               alignItems="center"
               justifyContent="flex-start"
+              mt="20px"
             >
               <Heading
                 variant={[

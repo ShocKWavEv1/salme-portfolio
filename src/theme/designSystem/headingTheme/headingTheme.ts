@@ -46,21 +46,25 @@ const baseH2Styles = {
 const baseH3Styles = {
   fontFamily: PPMonument.style.fontFamily,
   fontSize: "96px",
+  lineHeight: "86px",
 };
 
 const baseH4Styles = {
   fontFamily: PPMonument.style.fontFamily,
   fontSize: "82px",
+  lineHeight: "72px",
 };
 
 const baseH5Styles = {
   fontFamily: PPMonument.style.fontFamily,
   fontSize: "68px",
+  lineHeight: "62px",
 };
 
 const baseH6Styles = {
   fontFamily: PPMonument.style.fontFamily,
   fontSize: "54px",
+  lineHeight: "50px",
 };
 
 const baseH7Styles = {
@@ -70,7 +74,8 @@ const baseH7Styles = {
 
 const baseH8Styles = {
   fontFamily: PPMonument.style.fontFamily,
-  fontSize: "36px",
+  fontSize: "34px",
+  lineHeight: "32px",
 };
 
 const baseH9Styles = {
