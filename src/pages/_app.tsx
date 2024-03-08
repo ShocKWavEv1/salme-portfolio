@@ -12,6 +12,7 @@ import LoadingBar from "react-top-loading-bar";
 import { useRouter } from "next/router";
 import Preloader from "@/components/preloader/preloader";
 import Meta from "@/components/meta/meta";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }: AppProps) {
   const isTouchableDevice = useIsTouchDevice();
@@ -62,6 +63,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={theme}>
+      <Analytics />
       <Meta
         title={"SLMRN | REACT MOBILE & WEB DEVELOPER"}
         description="REACT MOBILE & WEB DEVELOPER OBSESSED WITH DELIVERING IMMACULATE PRODUCTS."
