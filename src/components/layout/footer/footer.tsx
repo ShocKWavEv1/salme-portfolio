@@ -9,6 +9,7 @@ const Footer: React.FC<FooterProps> = () => {
   const { SECONDARY_COLOR } = useThemeMode();
   return (
     <Box
+      id="contact"
       w="100%"
       display="flex"
       flexDirection="column"

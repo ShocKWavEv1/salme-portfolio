@@ -1,6 +1,6 @@
 export const navigation = [
-  { title: "Home", path: "/" },
+  { title: "Home", path: "#home" },
   { title: "Laboratory", path: "#laboratory" },
   { title: "Showcase", path: "#showcase" },
-  { title: "Contact me", path: "contact" },
+  { title: "Contact me", path: "#contact" },
 ];

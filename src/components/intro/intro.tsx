@@ -16,6 +16,7 @@ const Intro: React.FC<IntroProps> = () => {
   return (
     <Scrollytelling.Root start="top bottom" end="bottom top" scrub={1.1}>
       <Box
+        id="home"
         w="100%"
         h="100svh"
         display="flex"

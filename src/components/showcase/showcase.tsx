@@ -12,6 +12,7 @@ const Showcase: React.FC<ShowcaseProps> = () => {
     <Scrollytelling.Root start="top bottom" end="bottom top" scrub={1.1}>
       <Box w="100%" display="flex" flexDirection="column" position="relative">
         <Box
+          id="showcase"
           w="100%"
           p={[
             "20px 12px 120px 12px",

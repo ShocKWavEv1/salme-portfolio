@@ -12,6 +12,7 @@ const Laboratory: React.FC<LaboratoryProps> = () => {
     <Scrollytelling.Root start="top bottom" end="bottom top" scrub={1.1}>
       <Box w="100%" display="flex" flexDirection="column" position="relative">
         <Box
+          id="laboratory"
           w="100%"
           p={[
             "100px 12px 0px 12px",

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { navigation } from "../constants";
 import FooterLinks from "@/components/layout/footer/footerLinks/footerLinks";
 import main_logo from "../../../../../../public/assets/logo/main_logo.svg";
+import Link from "next/link";
 
 const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
   const { SECONDARY_COLOR, colorMode } = useThemeMode();
@@ -78,27 +79,29 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
               justifyContent="flex-start"
               mt="20px"
             >
-              <Heading
-                variant={[
-                  "H8BLACK",
-                  "H6BLACK",
-                  "H5BLACK",
-                  "H4BLACK",
-                  "H3BLACK",
-                ]}
-                color={SECONDARY_COLOR}
-                textTransform="uppercase"
-                cursor="pointer"
-                className={
-                  colorMode === "dark" ? "hoverLightLink" : "hoverLink"
-                }
-                _hover={{
-                  color: colorMode === "dark" ? "primary.200" : "primary.500",
-                  transition: "color 0.4s ease-in-out",
-                }}
-              >
-                {item.title}
-              </Heading>
+              <Link href={item.path}>
+                <Heading
+                  variant={[
+                    "H8BLACK",
+                    "H6BLACK",
+                    "H5BLACK",
+                    "H4BLACK",
+                    "H3BLACK",
+                  ]}
+                  color={SECONDARY_COLOR}
+                  textTransform="uppercase"
+                  cursor="pointer"
+                  className={
+                    colorMode === "dark" ? "hoverLightLink" : "hoverLink"
+                  }
+                  _hover={{
+                    color: colorMode === "dark" ? "primary.200" : "primary.500",
+                    transition: "color 0.4s ease-in-out",
+                  }}
+                >
+                  {item.title}
+                </Heading>
+              </Link>
             </Box>
           );
         })}
