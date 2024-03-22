@@ -127,11 +127,17 @@ const Intro: React.FC<IntroProps> = () => {
               mt="30px"
               justifyContent="flex-start"
             >
-              <Button size="xs" colorScheme="primary">
-                <Text variant="XSBOLD" textTransform="uppercase" color="black">
-                  Check my github
-                </Text>
-              </Button>
+              <Link href={github} target="_blank">
+                <Button size="xs" colorScheme="primary">
+                  <Text
+                    variant="XSBOLD"
+                    textTransform="uppercase"
+                    color="black"
+                  >
+                    Check my github
+                  </Text>
+                </Button>
+              </Link>
             </Box>
           </Box>
         </Box>
