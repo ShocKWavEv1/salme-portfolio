@@ -61,7 +61,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
             </Link>
             -{" "}
             <Link
-              href="/assets/cv/SalmeronRodrigo_EN.pdf"
+              href="https://0k8pa0kiws.ufs.sh/f/UHjT33fGxKP2PSSeCrDjjr3Vwc5WmXM4k1QEbxD80S6nezfy"
               download
               target="_blank"
             >
