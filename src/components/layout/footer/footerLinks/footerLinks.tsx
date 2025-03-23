@@ -7,6 +7,7 @@ import Link from "next/link";
 const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
   const { SECONDARY_COLOR, colorMode } = useThemeMode();
 
+  const linkedin = "https://www.linkedin.com/in/rodrigo-salmeron-497526232/";
   const github = "https://github.com/ShocKWavEv1";
 
   const customDisplay = display;
@@ -37,7 +38,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
             color={SECONDARY_COLOR}
             textTransform="uppercase"
           >
-            <Link href={github} target="_blank">
+            <Link href={linkedin} target="_blank">
               <Text
                 as={"button"}
                 cursor="pointer"
@@ -59,7 +60,11 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
               </Text>{" "}
             </Link>
             -{" "}
-            <Link href={github} target="_blank">
+            <Link
+              href="/assets/cv/SalmeronRodrigo_EN.pdf"
+              download
+              target="_blank"
+            >
               <Text
                 as={"button"}
                 cursor="pointer"

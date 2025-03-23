@@ -41,7 +41,13 @@ const Navbar: React.FC<NavbarProps> = () => {
   });
 
   return (
-    <Box id="navbar" w="100%" position="absolute" zIndex={5}>
+    <Box
+      id="navbar"
+      w="100%"
+      position="absolute"
+      zIndex={5}
+      backgroundColor="red"
+    >
       <motion.div
         variants={{
           visible: { y: 0 },
@@ -55,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         style={{
           width: "100%",
           height: "90px",
-          backgroundColor: initialBG,
+          backgroundColor: "initialBG",
           position: "fixed",
           zIndex: 4,
           transition: "background-color 0.35s ease-in-out",

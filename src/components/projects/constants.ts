@@ -4,7 +4,7 @@ export const projectsData = [
     description:
       "Working on the Next-Generation HMI Experience without no driving experience.",
     speed: 0.5,
-    link: "https://www.housecolor.mx",
+    link: "https://housecolor-app.vercel.app",
   },
   {
     title: "Kathia Romero",

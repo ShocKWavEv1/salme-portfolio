@@ -15,7 +15,7 @@ const MenuBody: React.FC<MenuBodyProps> = ({ setOpen }) => {
       <Box
         w="100%"
         h="auto"
-        p={["12px 10px", "12px 20px", "12px 20px", "12px 20px", "12px 20px"]}
+        p={["18px 10px", "18px 20px", "18px 20px", "18px 20px", "18px 20px"]}
         bg={colorMode === "dark" ? "primary.500" : "rgba(0,0,0,0)"}
         display="grid"
         gridTemplateColumns="1fr  1fr"
