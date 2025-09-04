@@ -1,5 +1,12 @@
 export const projectsData = [
   {
+    title: "Laureana Toledo",
+    description:
+      "Working on the Next-Generation HMI Experience without no driving experience.",
+    speed: 0.5,
+    link: "https://laureanatoledo.com",
+  },
+  {
     title: "Housecolor",
     description:
       "Working on the Next-Generation HMI Experience without no driving experience.",
