@@ -11,7 +11,7 @@ const Intro: React.FC<IntroProps> = () => {
 
   const SLMRN = ["S", "L", "M", "R", "N"];
 
-  const github = "https://github.com/ShocKWavEv1";
+  // const github = "https://github.com/ShocKWavEv1";
 
   return (
     <Scrollytelling.Root start="top bottom" end="bottom top" scrub={1.1}>
@@ -127,7 +127,7 @@ const Intro: React.FC<IntroProps> = () => {
               mt="30px"
               justifyContent="flex-start"
             >
-              <Link href={github} target="_blank">
+              {/*<Link href={github} target="_blank">
                 <Button size="xs" colorScheme="primary">
                   <Text
                     variant="XSBOLD"
@@ -137,7 +137,7 @@ const Intro: React.FC<IntroProps> = () => {
                     Check my github
                   </Text>
                 </Button>
-              </Link>
+              </Link>*/}
             </Box>
           </Box>
         </Box>
@@ -213,13 +213,13 @@ const Intro: React.FC<IntroProps> = () => {
               "flex-end",
             ]}
           >
-            <Link href={github} target="_blank">
+            {/*<Link href={github} target="_blank">
               <Button size="sm" colorScheme="primary">
                 <Text variant="SMBOLD" textTransform="uppercase" color="black">
                   Check my github
                 </Text>
               </Button>
-            </Link>
+            </Link>*/}
           </Box>
         </Box>
       </Box>

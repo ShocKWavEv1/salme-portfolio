@@ -8,7 +8,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
   const { SECONDARY_COLOR, colorMode } = useThemeMode();
 
   const linkedin = "https://www.linkedin.com/in/rodrigo-salmeron-497526232/";
-  const github = "https://github.com/ShocKWavEv1";
+  // const github = "https://github.com/ShocKWavEv1";
 
   const customDisplay = display;
   return (
@@ -49,7 +49,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
               </Text>{" "}
             </Link>
             -{" "}
-            <Link href={github} target="_blank">
+            {/*<Link href={github} target="_blank">
               <Text
                 as={"button"}
                 cursor="pointer"
@@ -58,8 +58,7 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ display }) => {
               >
                 GITHUB
               </Text>{" "}
-            </Link>
-            -{" "}
+            </Link>*/}
             <Link
               href="https://0k8pa0kiws.ufs.sh/f/UHjT33fGxKP2PSSeCrDjjr3Vwc5WmXM4k1QEbxD80S6nezfy"
               download
